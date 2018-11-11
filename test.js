@@ -65,7 +65,7 @@ describe('remarker', () => {
       readFileSync(
         join(examples.replaceRemark, 'build', 'remark.js')
       ).toString()
-    ).to.include('console.log("remark.js")')
+    ).to.include("console.log('remark.js')")
   })
 
   it("injects scripts by remarker.yml's script", () => {
